@@ -1,8 +1,8 @@
 
 # Challenge técnico: Seniority Boost 2022
 
-Challenge desarrollado para participar
-de la iniciativa Seniority Boost 2022.
+Challenge desarrollado para participar de la iniciativa Seniority Boost 2022.
+El proyecto se desarrolló con el framework Spring Boot, por lo que para ejecutarlo solo se necesita entrar en /src/main/java/com/rooftopacademy/challenge y ejecutar main desde el archivo “ChallengeApplication.java”.
 
 
 ## Tech Stack
