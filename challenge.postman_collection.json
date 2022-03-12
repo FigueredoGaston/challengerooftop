@@ -99,13 +99,19 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/text",
+					"raw": "localhost:8080/text?page=2",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"text"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
 					]
 				}
 			},
