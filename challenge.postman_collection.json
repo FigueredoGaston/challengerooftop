@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "27115353-41c1-4cde-9f96-1c84016f9a74",
+		"name": "challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST new text",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"texto que no es parte la db\",\n    \"chars\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/text",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"text"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET text by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/text/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"text",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET text list without parameters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/text",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"text"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET text list with chars 9",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/text?page=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"text"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET text list with chars 2 and page 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/text",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"text"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET text list with chars 2 and rpp 12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/text?rpp=12",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"text"
+					],
+					"query": [
+						{
+							"key": "rpp",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/text/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/text/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"text",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
